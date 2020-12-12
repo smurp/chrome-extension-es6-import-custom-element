@@ -1,24 +1,25 @@
 {
-    "manifest_version": 2,
-    "name": "Chrome Extension ES6 Import Custom Element",
-    "version": "0.0.2",
-    "description": "Chrome Extension ES6 Import and Custom Element Demo",
-    "author": "smurp",
-    "background": {
-        "page": "src/html/background.html"
-    },
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "js": [
-          "src/js/custom-elements.min.js",
-          "src/js/content_script.js"]
-      }
-    ],
-    "permissions": [
-      "<all_urls>"
-    ],
-    "web_accessible_resources": [
-      "src/js/*"
-    ]
+  "manifest_version": 2,
+  "name": "Chrome Extension ES6 Import Custom Element",
+  "version": "0.0.2",
+  "description": "Chrome Extension ES6 Import and Custom Element Demo",
+  "author": "smurp",
+  "homepage_url": "https://github.com/smurp/chrome-extension-es6-import-custom-element",
+  "background": {
+    "page": "src/html/background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "src/js/custom-elements.min.js",
+        "src/js/content_script.js"]
+    }
+  ],
+  "permissions": [
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "src/js/*"
+  ]
 }
